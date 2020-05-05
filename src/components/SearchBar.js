@@ -1,8 +1,7 @@
 import React from 'react';
 
 class SearchBar extends React.Component{
-
-  state = { term: ''};
+  state = { term: '' };
 
   onInputChange = event => {
     this.setState({ term: event.target.value });
@@ -19,10 +18,11 @@ class SearchBar extends React.Component{
       <div className="ui segment">
         <form className="ui form" onSubmit={this.onFormSubmit}>
           <div className="field">
-            <label>Video search (examples: cars, plants, stars)</label>
+            <label>Video search</label>
             <input
               type="text"
-              onChange={this.onFormSubmit}
+              value={this.state.term}
+              onChange={(e) => this.setState({ term: e.target.value })}
             />
           </div>
         </form>
