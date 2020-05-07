@@ -1,5 +1,5 @@
 ## YouTube interface
-Simple recreation of Youtube interface using React
+Simple recreation of Youtube interface using React and YouTube API
 
 
 ## Technologies
